@@ -1,0 +1,16 @@
+{
+  "model_name": "google/bert_uncased_L-2_H-128_A-2",
+  "seed": 42,
+  "max_length": 96,
+  "batch_size": 32,
+  "epochs": 12,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "threads": 4,
+  "device": "cpu",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch_version": "2.14.0+cpu",
+  "parameter_count": 4395853,
+  "best_epoch": 12,
+  "model_revision": "30b0a37ccaaa32f332884b96992754e246e48c5f"
+}

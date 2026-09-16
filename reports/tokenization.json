@@ -1,0 +1,11 @@
+{
+  "max_length": 96,
+  "training_truncation_fraction": 0.0001177440244907571,
+  "training_token_percentiles": [
+    13.0,
+    28.0,
+    37.0,
+    53.0,
+    98.0
+  ]
+}

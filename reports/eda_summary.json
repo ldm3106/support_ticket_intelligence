@@ -1,0 +1,53 @@
+{
+  "train": {
+    "shape": [
+      10003,
+      2
+    ],
+    "missing": {
+      "text": 0,
+      "label": 0
+    },
+    "exact_duplicates": 0,
+    "normalized_text_duplicates": 4,
+    "classes": 77,
+    "words": {
+      "count": 10003.0,
+      "mean": 11.949415175447365,
+      "std": 7.8915768393189625,
+      "min": 2.0,
+      "25%": 7.0,
+      "50%": 10.0,
+      "75%": 13.0,
+      "max": 79.0
+    },
+    "under_3_words": 6,
+    "over_100_words": 0
+  },
+  "test": {
+    "shape": [
+      3080,
+      2
+    ],
+    "missing": {
+      "text": 0,
+      "label": 0
+    },
+    "exact_duplicates": 0,
+    "normalized_text_duplicates": 1,
+    "classes": 77,
+    "words": {
+      "count": 3080.0,
+      "mean": 10.952597402597403,
+      "std": 6.688180381157935,
+      "min": 2.0,
+      "25%": 7.0,
+      "50%": 9.0,
+      "75%": 12.0,
+      "max": 69.0
+    },
+    "under_3_words": 3,
+    "over_100_words": 0
+  },
+  "train_test_text_overlap": 7
+}

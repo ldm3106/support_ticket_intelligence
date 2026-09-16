@@ -1,0 +1,38 @@
+[
+  {
+    "text": "I was charged twice for the same card payment.",
+    "predicted_category": "transaction_charged_twice",
+    "confidence_score": 0.9489317536354065,
+    "truncated": false
+  },
+  {
+    "text": "My new card has not arrived yet.",
+    "predicted_category": "card_arrival",
+    "confidence_score": 0.8989225029945374,
+    "truncated": false
+  },
+  {
+    "text": "I forgot the passcode for my account.",
+    "predicted_category": "passcode_forgotten",
+    "confidence_score": 0.9477126002311707,
+    "truncated": false
+  },
+  {
+    "text": "I lost my card. What should I do?",
+    "predicted_category": "lost_or_stolen_card",
+    "confidence_score": 0.7697092294692993,
+    "truncated": false
+  },
+  {
+    "text": "How do I get a refund for a purchase?",
+    "predicted_category": "request_refund",
+    "confidence_score": 0.8956354260444641,
+    "truncated": false
+  },
+  {
+    "text": "My printer is broken and I need technical help.",
+    "predicted_category": "failed_transfer",
+    "confidence_score": 0.1173921599984169,
+    "truncated": false
+  }
+]
