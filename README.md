@@ -139,17 +139,24 @@ Future work could add a FastAPI classification service, Docker packaging, ticket
 
 [Learning notes](LEARNING_NOTES.md) explain project-specific concepts; [decisions](PROJECT_DECISIONS.md) capture choices and trade-offs; [interview notes](INTERVIEW_NOTES.md) retain concise talking points; [progress](PROJECT_PROGRESS.md) records actual completion.
 
-## Publish to GitHub
+## Repository and reproducibility
 
-Create an empty `support-ticket-intelligence` repository under your GitHub account, then run the following from PowerShell. This directory is a separate project inside the existing workspace; use its own repository rather than adding it to the insurance repository.
+Repository: [ldm3106/support_ticket_intelligence](https://github.com/ldm3106/support_ticket_intelligence).
+This project has its own Git repository; its local folder is nested in the insurance
+workspace, but its code does not depend on the insurance project.
 
-```powershell
-cd "C:\Users\ldm31\OneDrive\Desktop\Project\insurance-cost-prediction\support-ticket-intelligence"
-git init -b main
-git add .
-git commit -m "Build support ticket NLP and Transformer classification pipeline"
-git remote add origin https://github.com/ldm3106/support-ticket-intelligence.git
-git push -u origin main
-```
+GitHub includes the training/preprocessing/inference code, pinned model configuration,
+`requirements.txt`, recorded `requirements-lock.txt`, tests, executed notebook and
+measured reports. BANKING77 source URLs/checksums and split labels/counts are in
+`src/support_ticket/data.py` and `reports/split_manifest.json`. The pretrained
+BERT-Tiny model and revision are pinned in `src/support_ticket/config.py`.
+The How to run section above lists the full baseline/12-epoch training commands.
 
-Data, cached dependencies and model weights are excluded by `.gitignore`. The executed notebook, measured reports, source and documentation are included.
+Raw datasets, cached dependencies and trained weights are intentionally excluded.
+Retraining can recreate the workflow, but does not guarantee byte-identical weights
+or identical results across environments. Preserve the complete local `models/`
+directory privately if the exact demonstrated checkpoint is needed. Do not publish
+weights merely as a substitute for a private backup.
+
+The current README uses no personal filesystem path. An older commit contained a
+local workspace path; this documentation correction does not rewrite that history.

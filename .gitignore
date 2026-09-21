@@ -8,3 +8,11 @@ data/processed/
 models/*
 !models/.gitkeep
 .ipynb_checkpoints/
+
+# Keep local environment secrets and temporary logs private.
+.env
+.env.*
+*.log
+.local/
+*.pem
+*.key
